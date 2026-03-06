@@ -3,20 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HomeoTrack – Startup Blueprint</title>
+    <title>Executive Summary – HomeoTrack Blueprint</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        * {
-            font-family: 'Inter', sans-serif;
-        }
+        * { font-family: 'Inter', sans-serif; }
         html {
             scroll-behavior: smooth;
-        }
-        .gradient-hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
     </style>
 </head>
@@ -198,144 +193,94 @@
 
         <!-- Main Content -->
         <main class="flex-1 lg:ml-64 pt-16 lg:pt-0">
+            <!-- PAGE HEADER -->
+    <div class="bg-white border-b border-gray-200 py-8">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="flex items-center space-x-4 mb-4">
+                <a href="index.html" class="text-gray-500 hover:text-purple-600">← Back to Overview</a>
+            </div>
+            <h1 class="text-4xl font-bold text-gray-900 mb-2">1. Executive Summary</h1>
+            <p class="text-gray-600">Overview of HomeoTrack concept, target users, core problem, and proposed solution</p>
+        </div>
+    </div>
 
-            <!-- HERO SECTION -->
-            <section class="gradient-hero text-white py-20 md:py-32">
-                <div class="container mx-auto px-6 md:px-12 max-w-5xl">
-            <div class="text-center">
-                <div class="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                    STARTUP BLUEPRINT DOCUMENT
+    <!-- CONTENT -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6 md:px-12 max-w-5xl">
+            <div class="prose max-w-none">
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">The Concept</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        HomeoTrack is a digital platform that helps patients follow complex homeopathy prescriptions using smart reminders, visual medicine identification, and seamless doctor integration. The platform bridges the gap between homeopathy doctors and their patients, ensuring better treatment adherence and outcomes.
+                    </p>
                 </div>
-                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                    HomeoTrack
-                </h1>
-                <p class="text-xl md:text-2xl mb-2 text-gray-100 max-w-3xl mx-auto">
-                    Homeopathy Medicine Tracking & Prescription Management Platform
-                </p>
-                <p class="text-lg text-gray-200 mb-12">Starting with Maharashtra, India</p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="executive-summary.html" class="bg-white text-purple-700 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl">
-                        Start Reading Blueprint
-                    </a>
-                    <a href="product-roadmap.html" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-purple-700 transition-all">
-                        View Roadmap
-                    </a>
+
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-white border border-gray-200 rounded-lg p-6">
+                        <h4 class="font-semibold text-gray-900 mb-3 flex items-center">
+                            <svg class="w-5 h-5 text-purple-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                            </svg>
+                            Target Users
+                        </h4>
+                        <ul class="text-gray-600 space-y-2 text-sm">
+                            <li>• Homeopathy doctors (primary)</li>
+                            <li>• Patients undergoing homeopathy treatment</li>
+                            <li>• Families managing multiple prescriptions</li>
+                            <li>• Homeopathy clinics and practitioners</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg p-6">
+                        <h4 class="font-semibold text-gray-900 mb-3 flex items-center">
+                            <svg class="w-5 h-5 text-red-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                            </svg>
+                            Core Problem
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                            Homeopathy treatments often include multiple medicines with specific timings, potencies (30C, 200C, 1M), and food-related instructions. Patients struggle to remember complex schedules, leading to missed doses and reduced treatment effectiveness.
+                        </p>
+                    </div>
                 </div>
+
+                <div class="bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg p-6 mb-6">
+                    <h4 class="font-semibold text-gray-900 mb-3">Proposed Solution</h4>
+                    <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                        A dual-platform system: <strong>Doctor Dashboard</strong> (web) for creating digital prescriptions and tracking adherence, and <strong>Patient Mobile App</strong> for receiving smart reminders, visual medicine identification, and dose confirmation. The platform is specifically designed for homeopathy workflows, including potency tracking and food-related reminders.
+                    </p>
                 </div>
+
+                <div class="bg-green-50 border border-green-200 rounded-lg p-6">
+                    <h4 class="font-semibold text-gray-900 mb-3">Expected Impact</h4>
+                    <ul class="text-gray-700 text-sm space-y-2">
+                        <li>✓ <strong>Improved adherence:</strong> Reduce missed doses by 60-80%</li>
+                        <li>✓ <strong>Better outcomes:</strong> Patients follow prescriptions correctly, leading to faster recovery</li>
+                        <li>✓ <strong>Doctor efficiency:</strong> Reduce clarification calls and improve patient management</li>
+                        <li>✓ <strong>Digital transformation:</strong> Modernize homeopathy practice in India</li>
+                    </ul>
                 </div>
-            </section>
+            </div>
 
-            <!-- OVERVIEW SECTIONS -->
-            <section class="py-20 bg-white">
-                <div class="container mx-auto px-6 md:px-12 max-w-5xl">
-            <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Blueprint Overview</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Executive Summary -->
-                <a href="executive-summary.html" class="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-purple-500 hover:shadow-lg transition-all group">
-                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-500 transition">
-                        <span class="text-2xl font-bold text-blue-600 group-hover:text-white">1</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Executive Summary</h3>
-                    <p class="text-gray-600 text-sm">Overview of HomeoTrack concept, target users, core problem, and proposed solution.</p>
-                </a>
-
-                <!-- Problem Analysis -->
-                <a href="problem-analysis.html" class="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-red-500 hover:shadow-lg transition-all group">
-                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-red-500 transition">
-                        <span class="text-2xl font-bold text-red-600 group-hover:text-white">2</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Problem Analysis</h3>
-                    <p class="text-gray-600 text-sm">Deep dive into patient problems, doctor challenges, and market gaps in homeopathy treatment.</p>
-                </a>
-
-                <!-- Solution Architecture -->
-                <a href="solution-architecture.html" class="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-purple-500 hover:shadow-lg transition-all group">
-                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-purple-500 transition">
-                        <span class="text-2xl font-bold text-purple-600 group-hover:text-white">3</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Solution Architecture</h3>
-                    <p class="text-gray-600 text-sm">Detailed product architecture: Doctor Dashboard and Patient Mobile App features.</p>
-                </a>
-
-                <!-- Product Roadmap -->
-                <a href="product-roadmap.html" class="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-green-500 hover:shadow-lg transition-all group">
-                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-green-500 transition">
-                        <span class="text-2xl font-bold text-green-600 group-hover:text-white">4</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Product Roadmap</h3>
-                    <p class="text-gray-600 text-sm">5-phase roadmap from MVP to full platform with timelines and feature details.</p>
-                </a>
-
-                <!-- Validation Plan -->
-                <a href="validation-plan.html" class="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-orange-500 hover:shadow-lg transition-all group">
-                    <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-orange-500 transition">
-                        <span class="text-2xl font-bold text-orange-600 group-hover:text-white">5</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Validation Plan</h3>
-                    <p class="text-gray-600 text-sm">7-day rapid validation strategy with doctor and patient interviews.</p>
-                </a>
-
-                <!-- Business Model -->
-                <a href="business-model.html" class="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-indigo-500 hover:shadow-lg transition-all group">
-                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-indigo-500 transition">
-                        <span class="text-2xl font-bold text-indigo-600 group-hover:text-white">6</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Business Model</h3>
-                    <p class="text-gray-600 text-sm">B2B SaaS, D2C freemium, and marketplace revenue models with pricing tiers.</p>
-                </a>
-
-                <!-- Market Opportunity -->
-                <a href="market-opportunity.html" class="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-blue-500 hover:shadow-lg transition-all group">
-                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-500 transition">
-                        <span class="text-2xl font-bold text-blue-600 group-hover:text-white">7</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Market Opportunity</h3>
-                    <p class="text-gray-600 text-sm">Market size analysis and revenue projections reaching ₹100Cr+ valuation.</p>
-                </a>
-
-                <!-- Go-to-Market -->
-                <a href="gtm-strategy.html" class="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-purple-500 hover:shadow-lg transition-all group">
-                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-purple-500 transition">
-                        <span class="text-2xl font-bold text-purple-600 group-hover:text-white">8</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Go-to-Market</h3>
-                    <p class="text-gray-600 text-sm">4-phase expansion strategy from Maharashtra to pan-India.</p>
-                </a>
-
-                <!-- Competitive Advantage -->
-                <a href="competitive-advantage.html" class="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-yellow-500 hover:shadow-lg transition-all group">
-                    <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-yellow-500 transition">
-                        <span class="text-2xl font-bold text-yellow-600 group-hover:text-white">9</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Competitive Advantage</h3>
-                    <p class="text-gray-600 text-sm">Why HomeoTrack can win: niche specialization and homeopathy workflow support.</p>
-                </a>
-
-                <!-- Vision -->
-                <a href="vision.html" class="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-indigo-500 hover:shadow-lg transition-all group">
-                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-indigo-500 transition">
-                        <span class="text-2xl font-bold text-indigo-600 group-hover:text-white">10</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Long Term Vision</h3>
-                    <p class="text-gray-600 text-sm">Becoming the operating system for homeopathy clinics globally.</p>
-                </a>
-                </div>
-                </div>
-            </section>
+            <!-- Navigation -->
+            <div class="mt-12 pt-8 border-t border-gray-200 flex justify-between">
+                <a href="index.html" class="text-purple-600 hover:text-purple-700 font-medium">← Overview</a>
+                <a href="problem-analysis.html" class="text-purple-600 hover:text-purple-700 font-medium">Problem Analysis →</a>
+            </div>
+        </div>
+    </section>
 
             <!-- FOOTER -->
             <footer class="bg-gray-900 text-white py-12">
                 <div class="container mx-auto px-6 md:px-12 max-w-5xl">
-            <div class="text-center">
-                <h3 class="text-2xl md:text-3xl font-bold mb-4">Digitizing Homeopathy Care in India</h3>
-                <p class="text-gray-400 mb-6">HomeoTrack – Making homeopathy treatment simple and effective</p>
-                <div class="border-t border-gray-800 pt-8 mt-8">
-                    <p class="text-gray-500 text-sm">© 2026 HomeoTrack-Nishant. All rights reserved.</p>
-                </div>
-                </div>
+                    <div class="text-center">
+                        <h3 class="text-2xl md:text-3xl font-bold mb-4">Digitizing Homeopathy Care in India</h3>
+                        <p class="text-gray-400 mb-6">HomeoTrack – Making homeopathy treatment simple and effective</p>
+                        <div class="border-t border-gray-800 pt-8 mt-8">
+                            <p class="text-gray-500 text-sm">© 2026 HomeoTrack-Nishant. All rights reserved.</p>
+                        </div>
+                    </div>
                 </div>
             </footer>
-
         </main>
     </div>
 
@@ -357,7 +302,6 @@
             closeIcon.classList.toggle('hidden');
         }
 
-        // Mobile menu button
         document.getElementById('mobile-menu-btn')?.addEventListener('click', toggleMobileSidebar);
 
         // Handle navigation and scroll to top for new pages
