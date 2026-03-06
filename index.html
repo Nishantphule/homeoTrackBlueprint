@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeoTrack – Smart Medicine Management for Homeopathy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- HERO SECTION -->
+    <section class="gradient-hero text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 md:px-12 max-w-6xl">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    HomeoTrack – Smart Medicine Management for Homeopathy
+                </h1>
+                <p class="text-xl md:text-2xl mb-10 text-gray-100 max-w-3xl mx-auto leading-relaxed">
+                    Helping patients follow complex homeopathy prescriptions with smart reminders and doctor integration.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button onclick="scrollToSection('blueprint')" class="bg-white text-purple-700 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl">
+                        View Startup Blueprint
+                    </button>
+                    <button onclick="scrollToSection('roadmap')" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-purple-700 transition-all">
+                        View Product Roadmap
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEM SECTION -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 md:px-12 max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">The Problem</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Patients struggle with managing complex homeopathy treatments</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Multiple Medicines</h3>
+                    <p class="text-gray-600">Patients juggle multiple homeopathy medicines simultaneously, making it hard to track.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Similar Bottles</h3>
+                    <p class="text-gray-600">Homeopathy bottles look identical, causing confusion and wrong medicine intake.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Complex Schedules</h3>
+                    <p class="text-gray-600">Intricate dosage schedules with different timings and frequencies are hard to remember.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Forgotten Doses</h3>
+                    <p class="text-gray-600">Patients frequently forget doses, affecting treatment effectiveness and recovery time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOLUTION SECTION -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 md:px-12 max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">The Solution</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">A comprehensive platform connecting doctors and patients</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Doctor Dashboard -->
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Doctor Dashboard</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-600 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-700">Create digital prescriptions</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-600 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-700">Set medicine schedule</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-600 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-700">Track patient adherence</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Patient Mobile App -->
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="w-14 h-14 bg-purple-600 rounded-xl flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Patient Mobile App</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-purple-600 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-700">Medicine reminders</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-purple-600 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-700">Visual medicine identification</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-purple-600 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-700">Dose tracking</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-purple-600 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-700">Family medicine tracking</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCT ROADMAP -->
+    <section id="roadmap" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 md:px-12 max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Product Roadmap</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Building the future of homeopathy care, one version at a time</p>
+            </div>
+            <div class="space-y-6">
+                <!-- V1 -->
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-md hover:shadow-xl transition-all border-l-4 border-blue-500">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div>
+                            <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-2">V1 – MVP</h3>
+                            <p class="text-gray-600 text-lg">Prescription + reminders</p>
+                        </div>
+                        <div class="mt-4 md:mt-0">
+                            <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-semibold">Foundation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- V2 -->
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-md hover:shadow-xl transition-all border-l-4 border-purple-500">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div>
+                            <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-2">V2 – Smart Homeopathy System</h3>
+                            <p class="text-gray-600 text-lg">Potency tracking • Before/after food reminders</p>
+                        </div>
+                        <div class="mt-4 md:mt-0">
+                            <span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full font-semibold">Enhanced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- V3 -->
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-md hover:shadow-xl transition-all border-l-4 border-green-500">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div>
+                            <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-2">V3 – AI Prescription Scanner</h3>
+                            <p class="text-gray-600 text-lg">Upload prescription photo • Extract medicines automatically</p>
+                        </div>
+                        <div class="mt-4 md:mt-0">
+                            <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full font-semibold">AI-Powered</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- V4 -->
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-md hover:shadow-xl transition-all border-l-4 border-yellow-500">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div>
+                            <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-2">V4 – Bottle Recognition</h3>
+                            <p class="text-gray-600 text-lg">Scan bottle to detect medicine</p>
+                        </div>
+                        <div class="mt-4 md:mt-0">
+                            <span class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full font-semibold">Computer Vision</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- V5 -->
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-md hover:shadow-xl transition-all border-l-4 border-indigo-500">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div>
+                            <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-2">V5 – Full Homeopathy Ecosystem</h3>
+                            <p class="text-gray-600 text-lg">Teleconsultation • Medicine ordering • Patient analytics</p>
+                        </div>
+                        <div class="mt-4 md:mt-0">
+                            <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full font-semibold">Complete Platform</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7 DAY VALIDATION PLAN -->
+    <section id="blueprint" class="py-20 bg-white">
+        <div class="container mx-auto px-6 md:px-12 max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">7 Day Validation Plan</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Rapid validation to test market demand</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl shadow-md">
+                    <div class="text-3xl font-bold text-blue-600 mb-2">Day 1–2</div>
+                    <p class="text-gray-700 font-semibold">Interview 10 homeopathy doctors</p>
+                </div>
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl shadow-md">
+                    <div class="text-3xl font-bold text-purple-600 mb-2">Day 3–4</div>
+                    <p class="text-gray-700 font-semibold">Show clickable prototype</p>
+                </div>
+                <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl shadow-md">
+                    <div class="text-3xl font-bold text-green-600 mb-2">Day 5–6</div>
+                    <p class="text-gray-700 font-semibold">Interview patients</p>
+                </div>
+                <div class="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-xl shadow-md">
+                    <div class="text-3xl font-bold text-orange-600 mb-2">Day 7</div>
+                    <p class="text-gray-700 font-semibold">Analyze demand and decide MVP</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BUSINESS MODEL -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 md:px-12 max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Business Model</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Multiple revenue streams for sustainable growth</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                    <div class="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">B2B SaaS</h3>
+                    <p class="text-gray-600 mb-4">Subscription model for doctors</p>
+                    <p class="text-2xl font-bold text-blue-600">₹500–₹1500</p>
+                    <p class="text-sm text-gray-500 mt-1">per doctor per month</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                    <div class="w-14 h-14 bg-purple-600 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">D2C Patient App</h3>
+                    <p class="text-gray-600 mb-4">Freemium model with premium features</p>
+                    <p class="text-2xl font-bold text-purple-600">₹99</p>
+                    <p class="text-sm text-gray-500 mt-1">premium subscription</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                    <div class="w-14 h-14 bg-green-600 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Pharmacy Marketplace</h3>
+                    <p class="text-gray-600 mb-4">Commission-based revenue</p>
+                    <p class="text-2xl font-bold text-green-600">10–20%</p>
+                    <p class="text-sm text-gray-500 mt-1">commission per order</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ₹100Cr STARTUP VISION -->
+    <section class="py-20 bg-gradient-to-br from-indigo-600 to-purple-600 text-white">
+        <div class="container mx-auto px-6 md:px-12 max-w-6xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">₹100Cr Startup Vision</h2>
+                <p class="text-xl text-indigo-100 max-w-2xl mx-auto">Building India's largest homeopathy care platform</p>
+            </div>
+            <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8 md:p-12 mb-8">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Market Size</h3>
+                        <p class="text-lg text-indigo-100 mb-6">
+                            India has <span class="font-bold text-white">~200,000 homeopathy doctors</span>.
+                        </p>
+                        <div class="bg-white/20 rounded-lg p-6 mb-6">
+                            <p class="text-sm text-indigo-100 mb-2">If 20,000 doctors use the platform at ₹1000/month:</p>
+                            <p class="text-3xl font-bold">Revenue = ₹2 Cr</p>
+                            <p class="text-sm text-indigo-100 mt-2">per month</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Growth Path</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-300 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-lg">Pharmacy marketplace integration</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-300 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-lg">Teleconsultation services</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-300 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-lg">Patient analytics & insights</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-300 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-lg">Scale to <span class="font-bold">₹100Cr+ valuation</span></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6 md:px-12 max-w-6xl">
+            <div class="text-center">
+                <h3 class="text-2xl md:text-3xl font-bold mb-4">Digitizing Homeopathy Care in India</h3>
+                <p class="text-gray-400 mb-6">HomeoTrack – Making homeopathy treatment simple and effective</p>
+                <div class="border-t border-gray-800 pt-8 mt-8">
+                    <p class="text-gray-500 text-sm">© 2026 HomeoTrack@Nishant. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
