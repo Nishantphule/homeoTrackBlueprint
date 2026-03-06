@@ -372,21 +372,60 @@
 
         // Handle navigation and scroll to top for new pages
         document.addEventListener('DOMContentLoaded', function() {
-            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            // Get current page filename more reliably
+            const pathname = window.location.pathname || window.location.href;
+            let currentPage = pathname.split('/').pop() || 'index.html';
+            
+            // Handle cases where pathname might be empty or just '/'
+            if (!currentPage || currentPage === '' || currentPage === '/') {
+                currentPage = 'index.html';
+            }
+            
+            // Also check window.location.href for file:// protocol
+            if (window.location.href && window.location.href.includes('.html')) {
+                const hrefMatch = window.location.href.match(/([^\/]+\.html)/);
+                if (hrefMatch) {
+                    currentPage = hrefMatch[1];
+                }
+            }
+            
             const links = document.querySelectorAll('aside nav a, #mobile-sidebar nav a');
             const mainContent = document.querySelector('main');
             
             links.forEach(link => {
                 const href = link.getAttribute('href');
                 
-                // Highlight active page
-                if (href === currentPage || (currentPage === '' && href === 'index.html')) {
-                    link.classList.add('text-purple-600', 'bg-purple-50', 'border', 'border-purple-100', 'font-semibold');
+                // Normalize href (remove any query params or hash)
+                const hrefFile = href.split('?')[0].split('#')[0];
+                const currentFile = currentPage.split('?')[0].split('#')[0];
+                
+                // Highlight active page - check if href matches current page
+                const isActive = hrefFile === currentFile || 
+                                (currentFile === '' && hrefFile === 'index.html') ||
+                                (currentFile === 'index.html' && hrefFile === 'index.html') ||
+                                (window.location.href.includes(hrefFile) && hrefFile !== 'index.html');
+                
+                if (isActive) {
+                    // Remove all default classes
                     link.classList.remove('text-gray-700', 'hover:text-purple-600', 'hover:bg-purple-50/50', 'font-medium');
+                    // Add active classes
+                    link.classList.add('text-purple-600', 'bg-purple-50', 'border', 'border-purple-100', 'font-semibold');
+                    
+                    // Update dot indicator
                     const dot = link.querySelector('span.w-2');
                     if (dot) {
                         dot.classList.remove('bg-gray-300');
                         dot.classList.add('bg-purple-600');
+                    }
+                } else {
+                    // Ensure non-active links have correct classes
+                    link.classList.remove('text-purple-600', 'bg-purple-50', 'border', 'border-purple-100', 'font-semibold');
+                    link.classList.add('text-gray-700', 'hover:text-purple-600', 'hover:bg-purple-50/50', 'font-medium');
+                    
+                    const dot = link.querySelector('span.w-2');
+                    if (dot) {
+                        dot.classList.remove('bg-purple-600');
+                        dot.classList.add('bg-gray-300');
                     }
                 }
                 
